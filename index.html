@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test Website</title>
+        <link rel="icon" type="image/x-icon" href="Guidinglight_icon_moon.webp">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+        <style>
+            body {
+                background: linear-gradient(0deg, #000102 5%,#000913 33%, #011c30 63%, #073540 95%);
+                background-color: #000102;
+                background-repeat: no-repeat;
+                color: #b4dfea;
+                font-family: "Oswald", sans-serif;
+                text-align: center;
+                font-size:23px;
+            }
+            .link {
+                color: #1daacd;
+                font-size:30px;
+            }
+            img, button {
+                text-align: center;
+            }
+            .mycontainer {
+                width:100%;
+                display:inline-block;
+                margin: auto;
+                display: flex; justify-content: center; align-items: center
+            }
+        </style>
+    </head>
+    <body>
+        <div class="mycontainer">
+            <div class="mycontainer">
+                <img text-align=left src="Guidinglight_icon_moon.webp" height=100px width=100px>
+                <div style="display:inline-block;"><p text-align=left><b><a style="font-size:30px; color: rgb(199, 242, 255);" href="index.html"><u>About Me</u></a></b></p></div>
+            </div>
+            <div class="mycontainer">
+                <img text-align=left src="Starlight_death_screen_moon.webp" height=100px width=100px>
+                <div style="display:inline-block;"><p text-align=left><b><a style="font-size:30px; color: rgb(253, 249, 174);" href="games.html"><u>My Games</u></a></b></p></div>
+            </div>
+            <div class="mycontainer">
+                <img text-align=left src="redlight.webp" height=100px width=100px>
+                <div style="display:inline-block;"><p text-align=left><b><a style="font-size:30px; color: rgb(255, 174, 173);" href="dni.html"><u>Boundaries</u></a></b></p></div>
+            </div>
+        </div>
+        
+        <div style="height: 2px; background: linear-gradient(90deg, #b4dfea00 0%, #b4dfea 50%, #b4dfea00 100%)"></div>
+        
+        <p id="quote" style="font-size:32px;"></p>
+
+        <script>
+            const quotes = [
+                "My lights shall guide you.",
+                "Oh... hello. It's you...",
+                "You'll get used to this place before long.",
+                "I'm terribly sorry. I'm not sure what happened to you.",
+                "The Hotel isn't a simple place...",
+                "You made it this far! Keep going!",
+                "You’ve done great! Don’t give up!",
+                "They don't like to be stared at.",
+                "...but I can assure you that stuff isn't strong enough."
+            ]
+            let quote = quotes[Math.floor(Math.random()*quotes.length)]
+            document.getElementById('quote').innerHTML = `"${quote}"<br><i style="font-size:17px;">- Moonlight</i>`
+        </script>
+
+        <div style="height: 2px; background: linear-gradient(90deg, #b4dfea00 0%, #b4dfea 50%, #b4dfea00 100%)"></div>
+
+        <p>Hello, I'm <b>Abbie</b>!</p>
+        <p>
+            I like developing and programming games, and I also really, really like <b>DOORS</b>. Perhaps you could say I'm obsessed.
+            <br>
+            Most of my games are developed on either Roblox or Gamemaker, and therefore, I only really know Luau and GML (along with the HTML, CSS, and Javascript I learned to make this page!).
+            <br>
+            If you want to contact me, you can DM on Discord at @raberton, as I'm free most of the time! If I know you on Twitter or Roblox, feel free to send me a friend request!
+            <br>
+            <br>
+            I also really like modifiers. the <b style="color: rgb(255, 174, 173);">300%</b> grind never stops.
+        </p>
+        
+        <div style="height: 2px; background: linear-gradient(90deg, #b4dfea00 0%, #b4dfea 50%, #b4dfea00 100%)"></div>
+
+        <p class="link"><a href="https://www.roblox.com/users/3241660585/profile">Roblox</a> <a href="https://www.youtube.com/@theguythatcodes">Youtube</a> <a href="https://twitter.com/TheGuyThatCodez">Twitter</a></p>
+    </body>
+</html>
+
+

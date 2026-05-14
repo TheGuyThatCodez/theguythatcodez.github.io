@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test Website</title>
+        <link rel="icon" type="image/x-icon" href="Guidinglight_icon_moon.webp">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+        <style>
+            body {
+                background: linear-gradient(0deg, #010002 5%,#040013 33%, #110130 63%, #6f46b5 95%);
+                background-color: #000102;
+                background-repeat: no-repeat;
+                color: #c3b4ea;
+                font-family: "Oswald", sans-serif;
+                text-align: center;
+                font-size:23px;
+            }
+            .link {
+                color: #8c1dcd;
+                font-size:30px;
+            }
+            img, button {
+                text-align: center;
+            }
+            .mycontainer {
+                width:100%;
+                display:inline-block;
+                margin: auto;
+                display: flex; justify-content: center; align-items: center
+            }
+        </style>
+    </head>
+    <body>
+        <div class="mycontainer">
+            <div class="mycontainer">
+                <img text-align=left src="../Starlight_death_screen_moon.webp" height=100px width=100px>
+                <div style="display:inline-block;"><p text-align=left><b><a style="font-size:30px; color: rgb(244, 108, 251);" href="../glitch.html"><u>BACK</u></a></b></p></div>
+            </div>
+        </div>
+        
+        <div style="height: 2px; background: linear-gradient(90deg, #b4dfea00 0%, #d3b4ea 50%, #b4dfea00 100%)"></div>
+        
+        <p id="quote" style="font-size:32px;"></p>
+
+        <script>
+            const quotes = [
+                "Please nick stop beating me up im sorry",
+                "Pleaes nick dont throw that big bomb at me",
+                "Please nick im sorry",
+                "Nick please target pik instead of me",
+                "What did i do to you nick",
+                "Oh my god nick just voided me",
+                "Nick please slow down please",
+                "Oh my god i swear i press e on that item",
+                "Nick i cant do this anymore please nick please",
+                "I cant take it anymore. Please nick let me out of the rankedtrench",
+            ]
+            let quote = quotes[Math.floor(Math.random()*quotes.length)]
+            document.getElementById('quote').innerHTML = `"${quote}"<br><i style="font-size:17px;">- Abbie</i>`
+        </script>
+
+        <div style="height: 2px; background: linear-gradient(90deg, #b4dfea00 0%, #d3b4ea 50%, #b4dfea00 100%)"></div>
+
+        <h1>il beat you someday.</h1>
+        
+        <div style="height: 2px; background: linear-gradient(90deg, #b4dfea00 0%, #d3b4ea 50%, #b4dfea00 100%)"></div>
+        
+        <br>
+        <img src="BattleModeLogo.webp">
+    </body>
+</html>
+
+

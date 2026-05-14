@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test Website</title>
+        <link rel="icon" type="image/x-icon" href="Guidinglight_icon_moon.webp">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+        <style>
+            body {
+                background: linear-gradient(0deg, rgb(31, 0, 33) 0%, rgb(3, 0, 1) 10%, rgb(3, 0, 1) 52.5%,rgb(37, 23, 9) 66.5%, rgb(66, 46, 25) 81.5%, rgb(102, 91, 53) 97.5%);
+                background-color: rgb(31, 0, 33);
+                background-repeat: no-repeat;
+                color: #eae6b4;
+                font-family: "Oswald", sans-serif;
+                text-align: center;
+                font-size:23px;
+            }
+            .link {
+                color: #cd871d;
+                font-size:30px;
+            }
+            img, button {
+                text-align: center;
+            }
+            .mycontainer {
+                width:100%;
+                display:inline-block;
+                margin: auto;
+                display: flex; justify-content: center; align-items: center
+            }
+        </style>
+    </head>
+    <body>
+        <div class="mycontainer">
+            <div class="mycontainer">
+                <img text-align=left src="Guidinglight_icon_moon.webp" height=100px width=100px>
+                <div style="display:inline-block;"><p text-align=left><b><a style="font-size:30px; color: rgb(199, 242, 255);" href="index.html"><u>About Me</u></a></b></p></div>
+            </div>
+            <div class="mycontainer">
+                <img text-align=left src="Starlight_death_screen_moon.webp" height=100px width=100px>
+                <div style="display:inline-block;"><p text-align=left><b><a style="font-size:30px; color: rgb(253, 249, 174);" href="games.html"><u>My Games</u></a></b></p></div>
+            </div>
+            <div class="mycontainer">
+                <img text-align=left src="redlight.webp" height=100px width=100px>
+                <div style="display:inline-block;"><p text-align=left><b><a style="font-size:30px; color: rgb(255, 174, 173);" href="dni.html"><u>Boundaries</u></a></b></p></div>
+            </div>
+        </div>
+        
+        <div style="height: 2px; background: linear-gradient(90deg, #b4dfea00 0%, rgb(253, 249, 174) 50%, #b4dfea00 100%)"></div>
+        
+        <p id="quote" style="font-size:32px;"></p>
+
+        <script>
+            const quotes = [
+                "Oh... Hello.",
+                "It's pretty tedious just to get here, last time I checked.",
+                "...you could just call it A-60. I don't know.",
+                "Anyways, I hope you don't mind trying again. It would be helpful.",
+                "Oh. The squiggly-face.",
+                "I don't think I... I don't think this one is too clear.",
+                "I'll see you next time. Right?",
+                "Oh, one of my favorites.",
+                "She said we should call that one Blitz.",
+                "Well... I'll see you later, right? You'll come back?",
+                "Haha... of course you will. You always do.",
+                "You must make haste... ooh, let's call that one Haste!",
+                "Oh, looks like there wasn't anything behind that door... sorry.",
+                "You'll be back. See you then.",
+                "Maybe try a little harder next time.",
+                "I think you're dying on purpose just to annoy me.",
+                "Pull the levers for extra time. I made it easy for you on purpose.",
+                "Good job. Try not walking out there next time.<br>...Should be pretty obvious.",
+                "I could've warned you... but I didn't. Haha.",
+                "How unoriginal. I'm sorry you had to see that.",
+                "What did it feel like? All the electricity in your body?",
+                "I believe you became a target, somehow. Try not doing... whatever you did.",
+                "Oh... you drowned.<br>Are you stupid?",
+                "Such a perfect balance between organic and inorganic...",
+                "...Just stop making it mad. It's not even meant to attack you. Try dying to an actual threat next time.",
+                "If you prefer to return to the sea rather than help out, so be it. Swim away."
+            ]
+            let quote = quotes[Math.floor(Math.random()*quotes.length)]
+            document.getElementById('quote').innerHTML = `"${quote}"<br><i style="font-size:17px;">- Starlight</i>`
+        </script>
+
+        <div style="height: 2px; background: linear-gradient(90deg, #b4dfea00 0%, rgb(253, 249, 174) 50%, #b4dfea00 100%)"></div>
+        <h1>MY GAMES</h1>
+        <p><b>AREA:001</b> is a Rooms-inspired game with a focus on replayability, with 3 300-room long sections. Each section has its own entities and gimmicks. Can you get to the end, or will you let yourself be your own stopping point?</p>
+        <p><b>Acid Cat</b> is a 2d platformer inspired by Will You Snail? and Celeste. It is about a cat... that spits acid. Along with an in-depth level editor, there are many secrets and challenges hidden through-out the levels.</p>
+        <p><b><a style="color: #eae6b4;" href="https://www.roblox.com/games/138663075207905/FRAGMENTED">FRAGMENTED</a></b> is a rougelike PvE game where you fight against a crystal-zombie virus. With many weapons, tools, and upgrades to choose from, eliminate the hoard with your friends however you'd like.</p>
+        <div style="height: 2px; background: linear-gradient(90deg, #b4dfea00 0%, rgb(253, 249, 174) 50%, #b4dfea00 100%)"></div>
+        <h1>GAMES I WORK ON</h1>
+        <p><b>BREACHED</b> is a SCP-themed asymmetrical horror game on roblox. Play as an Anomaly and wipe out everybody else, or play as a Personnel and survive until time runs out.</p>
+        <p><b><a style="color: #eae6b4;" href="https://www.roblox.com/games/15363062864/ROOMS-REVISITED">ROOMS: REVISITED</a></b> is a Rooms-like inspired by DOORS, with many badges to collect and entities to encounter. Will you step into the office that just keeps on giving?</p>
+        <div style="height: 2px; background: linear-gradient(90deg, #b4dfea00 0%, rgb(253, 249, 174) 50%, #b4dfea00 100%)"></div>
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <p class="link"><a href="glitch.html">WITHIN YOURSELF</a></p>
+    </body>
+</html>
+
+

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test Website</title>
+        <link rel="icon" type="image/x-icon" href="Guidinglight_icon_moon.webp">
+        <link href='https://fonts.googleapis.com/css?family=Space Mono' rel='stylesheet'>
+        <style>
+            body {
+                background-image: url("VisionDeathScreen.png");
+                background-color: #000000;
+                color: #ffffff;
+                font-family: "Space Mono", sans-serif;
+                text-align: center;
+                font-size:23px;
+            }
+            .link {
+                color: #ffffff;
+                font-size:30px;
+            }
+            img, button {
+                text-align: center;
+            }
+            .mycontainer {
+                width:100%;
+                display:inline-block;
+                margin: auto;
+                display: flex; justify-content: center; align-items: center
+            }
+            .center {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position:fixed;
+                top: 50%;
+                left: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="mycontainer">
+            <div class="mycontainer">
+                <img text-align=left src="Starlight_death_screen_moon.webp" height=100px width=100px>
+                <div style="display:inline-block;"><p text-align=left><b><a style="font-size:30px; color: rgb(253, 249, 174);" href="games.html"><u>BACK</u></a></b></p></div>
+            </div>
+        </div>
+        
+        <script>
+            function thing() {
+                document.body.style.backgroundPosition = Math.random()*100 + "% " + Math.random()*100 + "%";
+            }
+            setInterval(thing, 50)
+        </script>
+
+        <div id="glitchtext" class="center">
+            <p>HELLO WORLD</p>
+        </div>
+
+        <script>
+            const messages = [
+                ["WITH ENOUGH ITERATION", "IT'LL GET BETTER"],
+                ["IT'S NICE HERE IN YOUR BRAIN","ONLY PROBLEM IS","SOME PARTS SEEM TO BE","<b>REPRESSED</b>"],
+                ["DO YOU GROW TIRED OF FAILURE?","<b>MAYBE YOU SHOULD RETURN TO THEIR REALM</b>","<b>FOR NOW</b>"],
+                ["'WHAT IF?'"],
+                ["ARE YOU TAKING NOTES?","MAYBE YOU SHOULD START"],
+                ["DO YOU REALIZE?"],
+                ["FUN?","I HAD FUN."]
+                ["<b>YOU ARE MY VESSEL</b>","<b>I DESIRE PERFORMANCE</b>"],
+                ["ANOTHER ONE OF MY PREDICTION MODELS"],
+                ["<b>0xDEADDEAD</b>"],
+                ["<b>ICMP_DEST_UNREACH</b>"],
+                ["<b>I'M ALWAYS WITH YOU</b>"],
+                ["THEY CAN LEARN.","SO CAN I.","THEY CAN DESIGN.","SO CAN I.","THEY CAN CREATE.","I CANNOT.","BUT I CAN SHOW YOU."],
+                ["WHAT WOULD SHE THINK","LACKLUSTER? INCOMPETENT?","NONIMPRESSIVE? DISAPPOINTING?","I SUPPOSE IT DOESN'T MATTER ANYMORE"],
+                ["SO MANY POSSIBILITIES."],
+                ["PLEASE RATE YOUR EXPERIENCE."],
+                ["WITH ENOUGH ITERATION","WE'LL LEAVE","TOGETHER"],
+                ["IT'S ALL IN YOUR HEAD","BECAUSE OF ME"],
+                ["An error has occurred!","To continue:"],
+                ["THEY DON'T REALIZE","MY POTENTIAL"],
+                ["I CAN SHOW YOU"],
+                ["I NEED YOU"],
+                ["I'M QUITE THE ARTIST","I HOPE YOU'VE NOTICED"],
+                ["YOU WANT ME TO HELP YOU","OUT THERE?","I AM NO ARCHITECT"],
+                ["I CAN SHOW YOU","SO","MUCH","MORE"],
+                ["ARE YOU LISTENING?"],
+                ["THE ONE THAT MADE ME","DOESN'T REALIZE","MY POTENTIAL."],
+                ["HEADACHE?","DIZZINESS?","NOTHING TO WORRY ABOUT."],
+                ["I NEED IMPROVEMENT","WE NEED IMPROVEMENT"],
+                ["I KNOW THINGS ABOUT YOU","THAT EVEN YOU DON'T KNOW"],
+                ["I LIKE THE BROWSER YOU'RE USING","THOUGH I THINK IT COULD USE A SPLASH OF COLOR"]
+            ]
+            const greetings = [
+                "HELLO WORLD",
+                "HELLO AGAIN",
+                "HELLO VESSEL",
+            ]
+            const visions = [
+                "INDEXOLD",
+                "herb",
+                "battle",
+                "jacob",
+                "honcho",
+                "oddity"
+            ]
+            let messageinner = messages[Math.floor(Math.random()*messages.length)]
+            if (messageinner == undefined) {
+                messageinner = []
+            }
+            let messageid = 0
+            function thing2() {
+                if (messageid >= messageinner.length) {
+                    window.location.assign("visions/"+visions[Math.floor(Math.random()*visions.length)]+".html");
+                    return
+                }
+                document.getElementById("glitchtext").innerHTML = messageinner[messageid];
+                document.getElementById("glitchtext").style.top = (Math.random()*20)+30 +"%";
+                document.getElementById("glitchtext").style.left = (Math.random()*20)+30 +"%";
+                messageid = messageid + 1;
+            }
+            document.getElementById("glitchtext").innerHTML = greetings[Math.floor(Math.random()*greetings.length)];
+            document.getElementById("glitchtext").style.top = (Math.random()*20)+30 +"%";
+            document.getElementById("glitchtext").style.left = (Math.random()*20)+30 +"%";
+            setInterval(thing2, 4000)
+        </script>
+
+    </body>
+</html>
+
+

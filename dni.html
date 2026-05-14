@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test Website</title>
+        <link rel="icon" type="image/x-icon" href="Guidinglight_icon_moon.webp">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+        <style>
+            body {
+                background: linear-gradient(0deg, #020000 5%,#130000 33%, #300101 63%, #400707 95%);
+                background-color: #020000;
+                background-repeat: no-repeat;
+                color: #eab4b4;
+                font-family: "Oswald", sans-serif;
+                text-align: center;
+                font-size:23px;
+            }
+            .link {
+                color: #cd1d1d;
+            }
+            img, button {
+                text-align: center;
+            }
+            .mycontainer {
+                width:100%;
+                display:inline-block;
+                margin: auto;
+                display: flex; justify-content: center; align-items: center
+            }
+        </style>
+    </head>
+    <body>
+        <div class="mycontainer">
+            <div class="mycontainer">
+                <img text-align=left src="Guidinglight_icon_moon.webp" height=100px width=100px>
+                <div style="display:inline-block;"><p text-align=left><b><a style="font-size:30px; color: rgb(199, 242, 255);" href="index.html"><u>About Me</u></a></b></p></div>
+            </div>
+            <div class="mycontainer">
+                <img text-align=left src="Starlight_death_screen_moon.webp" height=100px width=100px>
+                <div style="display:inline-block;"><p text-align=left><b><a style="font-size:30px; color: rgb(253, 249, 174);" href="games.html"><u>My Games</u></a></b></p></div>
+            </div>
+            <div class="mycontainer">
+                <img text-align=left src="redlight.webp" height=100px width=100px>
+                <div style="display:inline-block;"><p text-align=left><b><a style="font-size:30px; color: rgb(255, 174, 173);" href="dni.html"><u>Boundaries</u></a></b></p></div>
+            </div>
+        </div>
+        
+        <div style="height: 2px; background: linear-gradient(90deg, #b4dfea00 0%, #eab4b4 50%, #b4dfea00 100%)"></div>
+        
+        <p id="quote" style="font-size:32px;"></p>
+
+        <script>
+            const quotes = [
+                "Here come some Trespassers...",
+                "Be careful...",
+                "..."
+            ]
+            let quote = quotes[Math.floor(Math.random()*quotes.length)]
+            document.getElementById('quote').innerHTML = `"${quote}"<br><i style="font-size:17px;">- ???</i>`
+        </script>
+
+        <div style="height: 2px; background: linear-gradient(90deg, #b4dfea00 0%, #eab4b4 50%, #b4dfea00 100%)"></div>
+
+        <h1>DO NOT INTERACT IF:</h1>
+        <p>- Homophobes, transphobes, etc. (come on, im a trans lesbian, what do you expect?)</p>
+        <p>- Racists/xenophobes</p>
+        <p>- Pedophiles (including 'proshippers' and incest)</p>
+        <p>- Other <a href="https://basic-dni.crd.co" class="link">basic DNI criteria</a></p>
+        <br>
+        <p>- Zeal supporters (including 'neutralists')</p>
+        <p>- 'Femboys' (i don't want to be associated. feminine boys and crossdressers are okay!)</p>
+        
+        <div style="height: 2px; background: linear-gradient(90deg, #b4dfea00 0%, #eab4b4 50%, #b4dfea00 100%)"></div>
+    </body>
+</html>
+
+
